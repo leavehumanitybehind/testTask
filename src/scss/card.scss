@@ -1,0 +1,57 @@
+.house__card {
+    margin-bottom: 38px;
+    background: #f8f8f8;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+
+    @media (min-width: 768px) {
+        margin-right: 22px;
+    }
+}
+
+.house__desc {
+    padding: 15px 20px;
+}
+.house__img {
+    position: relative;
+}
+
+.house__desc-title {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.house__desc-address {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.house__desc-type {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: white;
+    padding: 8px;
+    background-color: #ec6608;
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+
+    &--green {
+        background-color: #006f79;
+    }
+}
+
+.house__desc-cost {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 7px;
+}
+
+.house__desc-ability {
+    font-size: 14px;
+    line-height: 19px;
+}

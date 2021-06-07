@@ -1,0 +1,84 @@
+@import "variables.scss";
+@import "filter.scss";
+@import "card.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    width: 100%;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: normal;
+    color: $main-color;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px 10px;
+    max-width: 1440px;
+
+    @media (min-width: 768px) {
+        padding: 35px 50px;
+    }
+}
+
+.main__title {
+    color: #45852d;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        font-size: 36px;
+        line-height: 49px;
+    }
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalog__link {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    padding: 12px 33px;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    color: #363636;
+    text-decoration: none;
+    max-width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    &:hover,
+    &:active {
+        border: 1px solid $main-hover-color;
+    }
+}
